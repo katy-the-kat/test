@@ -1,46 +1,66 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 header {
-  background-color: #005a9c;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+    background-color: #2b2e4a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    width: 100px;
 }
 
 main {
-  margin: 1rem auto;
-  max-width: 800px;
-  background: #fff;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
-  margin-bottom: 1.5rem;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  padding: 0.5rem 1rem;
-  margin-right: 1rem;
-  background-color: #005a9c;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+#console-output {
+    background: #000;
+    color: #0f0;
+    font-family: monospace;
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
 }
 
-button:hover {
-  background-color: #0072ce;
+#console-input {
+    width: 100%;
+    padding: 10px;
+    font-family: monospace;
+    border: 1px solid #333;
+    border-radius: 5px;
 }
 
-textarea {
-  width: 100%;
-  font-family: monospace;
-  padding: 0.5rem;
-  margin-top: 1rem;
+.status {
+    color: green;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #555;
 }
