@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake iDRAC Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>iDRAC Dashboard - PowerEdge C6525</h1>
+  </header>
+  <main>
+    <section id="hardware-info">
+      <h2>Hardware Overview</h2>
+      <ul>
+        <li><strong>Model:</strong> PowerEdge C6525</li>
+        <li><strong>CPU:</strong> AMD EPYC 7763 (64 cores)</li>
+        <li><strong>RAM:</strong> 768 GB</li>
+      </ul>
+    </section>
+    <section id="actions">
+      <h2>Actions</h2>
+      <button id="ssh-login">SSH Console</button>
+      <button id="vnc-console">VNC Console</button>
+    </section>
+    <section id="output">
+      <h2>Console Output</h2>
+      <textarea id="console" readonly rows="15" cols="80">Select an action above.</textarea>
+    </section>
+  </main>
+  <footer>
+    <p>Fake iDRAC Clone for Self-hosting</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
