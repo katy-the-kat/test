@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fake iDRAC Clone</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceDRAC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>iDRAC Dashboard - PowerEdge C6525</h1>
-  </header>
-  <main>
-    <section id="hardware-info">
-      <h2>Hardware Overview</h2>
-      <ul>
-        <li><strong>Model:</strong> PowerEdge C6525</li>
-        <li><strong>CPU:</strong> AMD EPYC 7763 (64 cores)</li>
-        <li><strong>RAM:</strong> 768 GB</li>
-      </ul>
-    </section>
-    <section id="actions">
-      <h2>Actions</h2>
-      <button id="ssh-login">SSH Console</button>
-      <button id="vnc-console">VNC Console</button>
-    </section>
-    <section id="output">
-      <h2>Console Output</h2>
-      <textarea id="console" readonly rows="15" cols="80">Select an action above.</textarea>
-    </section>
-  </main>
-  <footer>
-    <p>Fake iDRAC Clone for Self-hosting</p>
-  </footer>
-  <script src="scripts.js"></script>
+    <header>
+        <img src="assets/logo.png" alt="SpaceDRAC Logo" class="logo">
+        <h1>SpaceDRAC - Is-a.space Server Controller</h1>
+    </header>
+
+    <main>
+        <section id="hardware-stats">
+            <h2>Hardware Stats</h2>
+            <p><strong>Model:</strong> Is-a.space Server C6525</p>
+            <p><strong>Processor:</strong> AMD EPYC 7763</p>
+            <p><strong>RAM:</strong> 768GB</p>
+            <p><strong>Status:</strong> <span class="status">Operational</span></p>
+        </section>
+
+        <section id="ssh-console">
+            <h2>SSH Console</h2>
+            <div id="console-output">
+                <p>Welcome to SpaceDRAC - Server C6525</p>
+                <p>Type <code>help</code> for commands.</p>
+            </div>
+            <input type="text" id="console-input" placeholder="Enter command...">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 SpaceDRAC - A iDRAC clone for Is-a.space servers.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
